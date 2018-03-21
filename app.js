@@ -3,7 +3,9 @@ const app = express();
 const port = process.env.PORT || 8080;
 var path = require('path');
 var RaspiCam = require('raspicam');
-var photo_path = "~/Desktop/photo.jpg";
+var d = new Date();
+var dateTime = d.getFullYear() + "-" + (d.getMonth() + 1) + "-" + d.getDate() + "-" + d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds(); 
+var photo_path = `/home/pi/Desktop/${dateTime}.jpg`;
 
 app.use(express.static(path.join(__dirname, 'public')));
 
