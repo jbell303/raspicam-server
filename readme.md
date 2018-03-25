@@ -1,7 +1,7 @@
 # raspicam-server
 This project uses express to create a server listening on `port 5000` to use the raspberry pi camera module to take a picture in response to `GET` requests sent to the `photo` subdomain.
 ### Requirements
-* A RaspberryPi with internet access such as a WiFi module or a pi-zeroW.
+* A RaspberryPi with internet access such as a WiFi module or a Pi-Zero W.
 * A RaspberryPi camera module.
 * `node.js` and `npm` installed.
 ### Usage
