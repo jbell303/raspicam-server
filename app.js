@@ -2,6 +2,8 @@
 	a node.js server to run on a raspberry pi
 	that takes a picture using a pi camera
 	in response to a GET request to the /photo path
+
+	run using the command "node app.js"
 	James and Audrey Bell 2018
 	*/
 
@@ -27,7 +29,7 @@ app.get('/photo', function (req, res) {
 	console.log("taking picture");
 	res.send("taking picture");
 	camera.start(); // takes the picture
-})
+});
 
 // open port 5000 and wait for request
 app.listen(port, () => console.log('Server started! At http://localhost:' + port));
